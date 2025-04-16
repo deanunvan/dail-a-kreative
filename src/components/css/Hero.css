@@ -1,0 +1,20 @@
+@media (max-width:425px) {
+    .content-column h1{
+        font-size: 1.5rem;
+    }
+
+    .hero-section {
+        padding: 0rem 0%;
+        margin-left: -30px;
+      }
+
+      .carousel-column {
+        height: 600px;
+
+      }
+
+      .submit-button {
+        width: 30%;
+      }
+
+}

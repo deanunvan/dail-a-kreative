@@ -1,0 +1,147 @@
+.greeting-container {
+  position: relative;
+  height: 80vh; /* Use 100vh for full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Change as needed */
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.greeting-content {
+  display: flex; /* Use flexbox for text and image */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out text and image */
+  width: 100%; /* Full width of container */
+  max-width: 1200px; /* Limit max width */
+}
+
+.text-section {
+  flex: 1; /* Allow text section to take available space */
+  padding-right: 20px; /* Space between text and image */
+}
+
+.text-section h2 {
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.questions {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.questions p {
+  margin: 2px 0;
+}
+
+.dividerr {
+  border: none;
+  height: 1px;
+  background-color: #f7941d; /* Orange color for the horizontal line */
+  margin: 25px 0;
+  width: 100%;
+}
+
+.get-started-button {
+  background-color: #f7941d; /* Button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #f7951dcc; /* Darker color on hover */
+}
+
+/* Emoji Container */
+.emoji-container {
+  flex: 0 0 auto; /* Fixed size for the emoji */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbs-up-image {
+  width: 50%; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  /* position: absolute; */
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: -32px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: medium;
+}
+
+/* Media Queries */
+
+/* For mobile devices (up to 320px) */
+@media (max-width: 320px) {
+  .text-section h1 {
+    font-size: 1.8rem; /* Reduced font size for mobile */
+  }
+
+  .text-section p {
+    font-size: 1rem; /* Reduced font size for mobile */
+  }
+
+  .questions {
+    font-size: 0.9rem; /* Reduced font size for questions */
+  }
+
+  .get-started-button {
+    font-size: 1rem; /* Reduced button font size */
+    padding: 8px 16px; /* Smaller padding */
+  }
+
+  .thumbs-up-image {
+    width: 70%; /* Adjust emoji size for mobile */
+  }
+}
+
+/* For tablets (up to 425px) */
+@media (max-width: 425px) {
+  .text-section h1 {
+    font-size: 2rem; /* Reduced font size for tablets */
+  }
+
+  .text-section p {
+    font-size: 1.1rem; /* Reduced font size for tablets */
+  }
+
+  .questions {
+    font-size: 1rem; /* Keep question font size */
+  }
+
+  .get-started-button {
+    font-size: 1.1rem; /* Adjust button font size for tablets */
+  }
+
+  .thumbs-up-image {
+    width: 60%; /* Adjust emoji size for tablets */
+  }
+}

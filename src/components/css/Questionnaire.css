@@ -1,0 +1,147 @@
+.questionnaire-container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  background-color: white;
+  margin-top: 60px;
+}
+
+.progress-indicator {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  transition: background-color 0.3s;
+}
+
+.progress-dot.active {
+  background-color: #F7941D;
+}
+
+.question-text {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  max-width: 100%;
+  line-height: 1.4;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 1px solid #F7941D;
+}
+
+.option:hover {
+  transform: translateY(-5px);
+}
+
+.option-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.option-text {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.next-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+
+.back-button,
+.next-button {
+  background-color: #ffffff;
+  color: #F7941D;
+  border: 1px solid #F7941D;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.back-button:hover,
+.next-button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .question-text {
+    font-size: 1.4rem;
+    padding: 0 20px;
+  }
+  
+  .options {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  
+  .option {
+    width: 100%;
+  }
+  
+  .option-icon {
+    font-size: 2rem;
+  }
+  
+  .option-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .question-text {
+    font-size: 1.2rem;
+  }
+  
+  .navigation-buttons {
+    flex-direction: column;
+  }
+  
+  .back-button,
+  .next-button {
+    width: 100%;
+  }
+}
