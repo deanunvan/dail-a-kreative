@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate for naviga
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import pic1 from '../assets/pic2.png';
-import './css/Hero.css';
+
 import { Link } from 'react-router-dom';
 
 const SignUpSection = () => {
@@ -98,7 +98,7 @@ const SignUpSection = () => {
       </div>
       <footer className="copyright-footerr">
         <p>Copyright 2025 All Rights Reserved</p>
-      </footer>
+      </footer> 
     </div>
   );
 };

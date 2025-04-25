@@ -4,11 +4,11 @@ import './css/Questionnaire.css';
 
 const questions = [
   {
-    question: "What is your biggest challenge in finding consistent work opportunities?",
+    question: "What is your primary concern when working with clients?",
     options: [
-      { text: "Lack of visibility and exposure to potential clients", icon: "🧑‍🎨" },
-      { text: "Inconsistent pay and compensation for projects.", icon: "📅" },
-      { text: "Limited networking opportunities", icon: "💰" }
+      { text: "Ensuring fair compensation for my work", icon: "🧑‍🎨" },
+      { text: "Managing project expectations and communications", icon: "📅" },
+      { text: "Finding projects that align with my skills and interests", icon: "💰" }
     ]
   },
   // ... rest of questions unchanged
@@ -71,7 +71,7 @@ const Qn5 = () => {
                 </button>
             </div>
 
-            <footer>
+            <footer className='.copyright-footerr '>
                 <p>Copyright 2025 All Rights Reserved</p>
             </footer>
         </div>

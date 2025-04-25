@@ -6,20 +6,19 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #ffffff;
   color: #000000;
   line-height: 1.5;
 }
 
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 2rem;
   overflow: hidden;
 }
 
 .logo {
-  height: 6em;
+  height: 6rem;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -229,3 +228,5 @@ Link {
   font-size: medium;
   margin-left: -32px;
 }
+
+

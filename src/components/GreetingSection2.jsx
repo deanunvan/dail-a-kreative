@@ -17,7 +17,7 @@ const GreetingSection2 = () => {
           <div className="greeting-container">
       <div className="greeting-content">
         <div className="text-section">
-          <h2>Hey {fullName},</h2>
+          <h2>Hey <br /> {fullName},</h2>
           <p>
             Reach more clients, manage projects efficiently, 
             and grow your creative business.

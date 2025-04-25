@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <nav className="navbar1" style={{ backgroundColor: location.pathname === '/sign-up'  ? 'transparent' : 'black' }}>
+      <nav className="navbar" style={{ backgroundColor: location.pathname === '/sign-up'  ? 'transparent' : 'black' }}>
         <Link to="/">
           <img src={logo} alt="Logo" className="logoS" onClick={scrollToHero} />
         </Link>

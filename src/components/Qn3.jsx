@@ -4,11 +4,11 @@ import './css/Questionnaire.css';
 
 const questions = [
   {
-    question: "What is your biggest challenge in finding consistent work opportunities?",
+    question: "What feature would make a creative services platform most appealing to you?",
     options: [
-      { text: "Lack of visibility and exposure to potential clients", icon: "🧑‍🎨" },
-      { text: "Inconsistent pay and compensation for projects.", icon: "📅" },
-      { text: "Limited networking opportunities", icon: "💰" }
+      { text: "Access to a diverse range of  projects and clients", icon: "🧑‍🎨" },
+      { text: "Tools for managing projects and ensuring timely payments", icon: "📅" },
+      { text: "Opportunities for networking and professional growth", icon: "💰" }
     ]
   },
   // ... rest of questions unchanged

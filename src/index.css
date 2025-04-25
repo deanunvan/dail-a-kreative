@@ -4,13 +4,15 @@
 
   .navbar1{
     background-color: black;
-    width: 99vw;
+    width: 100%;
     height: auto;
     position: absolute;
+    padding: 1px;
     top: 0;
     left: 0;
     z-index: 10;
   }
+
 
   * {
     margin: 0;
@@ -35,7 +37,7 @@
 }
 
 .nav-container {
-  max-width: 800px;
+  max-width: 100%;
   margin: auto 0;
   position: relative;
   z-index: 1;
@@ -143,8 +145,13 @@
   }
   
   .logoS {
-    width: 10%;
-    height: 80px;
+    width: 15%;
+    height: 40px;
+    margin-left: 0;
+    @media (max-width: 414px) {
+      width: 30%;
+
+    }
   }
   
   .logoM {
@@ -154,8 +161,12 @@
   .sign-up-container {
     display: flex;
     height: 100vh;
-    nav{
-      opacity: o;
+    .navbar1{
+      opacity: 0;
+    }
+
+    .navbar1{
+      display: none;
     }
   }
   
@@ -169,8 +180,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 0.7rem;
     z-index: 2; /* Ensure it's above the image */
+    margin-left: 0.3rem;
   }
   
   .logo {
@@ -186,10 +198,11 @@
   
   .text-overlay {
     position: absolute;
-    top: 15%;
+    top: 0;
     left: 20%;
     color: white;
     z-index: 1;
+    margin-top: -90px;
   }
   
   .text-overlay h2 {
@@ -199,6 +212,26 @@
   }
   
   .text-overlay p {
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+  }
+
+  .text-overlayy {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    color: white;
+    z-index: 1;
+    margin-top: -90px;
+  }
+  
+  .text-overlayy h2 {
+    width: 80%;
+    font-size: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .text-overlayy p {
     margin-bottom: 2.5rem;
     font-weight: bold;
   }
@@ -228,7 +261,7 @@
   }
   
   .input-field {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -244,51 +277,8 @@
     width: 20%;
     cursor: pointer;
   }
-  
-  /* Media Queries */
-  
-  /* For mobile devices (up to 320px) */
-  
 
 
-
-@media (min-width: 426px) and (max-width: 700px) {
-  .sign-up-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-
-    
-    .image-container {
-      text-align: center;
-      width: 100%;
-      height: 60vh; /* Adjusted height for larger screens */
-      
-      .text-overlay {
-        width: 80%;
-        text-align: center;
-      }
-    }
-
-    
-    .form-container {
-      text-align: center;
-      width: 80%; /* Adjusted width for larger screens */
-      height: 70vh; /* Adjusted height for larger screens */
-      
-      p {
-        margin-left: 20px;
-      }
-      
-      .form {
-        width: 60%; /* Adjusted width for larger screens */
-        margin-left: 20px;
-        text-align: left;
-      }
-    }
-  }
-  
   .thank-you-container {
     margin-top: 80px;
     
@@ -330,6 +320,10 @@
   .text-overlay {
     top: 30%;
   }
+
+  .text-overlayy {
+    top: 30%;
+  }
   
   #hero {
     height: 80vh;
@@ -363,9 +357,6 @@
     animation-name: pic1;
   }
   
-  .logoS {
-    width: 30%;
-  }
   
   .questionnaire-container {
     margin-top: 150px;
@@ -392,16 +383,296 @@
       }
     }
   }
-}
-@media (max-width: 375px) {
+
+
+
+
+
+
+
+
+
+  
+  /* Media Queries */
+
+  @media (max-width: 600px) {
+    .sign-up-container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .text-overlayy br{
+      display: none;
+    }
+  
+    .image-container {
+      width: 100%;
+      height: 30vh;
+    }
+  
+    .form-container {
+      width: 100%;
+      padding: 2rem;
+      align-items: center;
+    }
+  
+    .text-overlay {
+      top: 30%;
+      left: 20%;
+      margin-top: 0;
+      text-align: left;
+
+    }
+  
+    .text-overlayy h2 {
+      font-size: 30px;
+      width: 100%;
+    }
+
+    .text-overlayy {
+      top: 40%;
+      left: 20%;
+      margin-top: 0;
+      text-align: left;
+
+    }
+  
+    .text-overlay h2 {
+      font-size: 30px;
+      width: 100%;
+    }
+  
+    .submit-button {
+      width: 100%;
+      margin: 60px 5px;
+    }
+  
+    .option {
+      width: 100%;
+    }
+
+    .form-group{
+      margin: 60px 5px;
+      margin-right: 100px;
+    }
+  }
+
+
+  @media (max-width: 414px) {
+    .sign-up-container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .text-overlayy br{
+      display: none;
+    }
+  
+    .image-container {
+      width: 100%;
+      height: 30vh;
+    }
+  
+    .form-container {
+      width: 100%;
+      padding: 2rem;
+      align-items: center;
+    }
+  
+    .text-overlay {
+      top: 30%;
+      left: 20%;
+      margin-top: 0;
+      text-align: left;
+
+    }
+  
+    .text-overlayy h2 {
+      font-size: 30px;
+      width: 100%;
+    }
+
+    .text-overlayy {
+      top: 40%;
+      left: 20%;
+      margin-top: 0;
+      text-align: left;
+
+    }
+  
+    .text-overlay h2 {
+      font-size: 30px;
+      width: 100%;
+    }
+  
+    .submit-button {
+      width: 100%;
+      margin: 60px 5px;
+    }
+  
+    .option {
+      width: 100%;
+    }
+
+    .form-group{
+      margin: 60px 5px;
+      margin-right: 100px;
+    }
+  }
+  
+  @media (max-width: 412px) {
+    .text-overlay h2 {
+      font-size: 28px;
+    }
+
+    .text-overlayy h2 {
+      font-size: 28px;
+    }
+  
+    .text-overlay p,
+    .form-container p {
+      font-size: 14px;
+    }
+
+    .text-overlayy p{
+      font-size: 14px;
+    }
+  
+    .submit-button {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .text-overlay h2 {
+      font-size: 24px;
+    }
+
+    .text-overlayy h2 {
+      font-size: 22px;
+    }
+  
+    .form-container {
+      padding: 1.5rem;
+    }
+  
+    .form-group {
+      margin-bottom: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .text-overlay h2 {
+      font-size: 20px;
+    }
+  
+    .text-overlay p {
+      font-size: 12px;
+    }
+
+    .text-overlayy h2 {
+      font-size: 20px;
+    }
+  
+    .text-overlayy p {
+      font-size: 12px;
+    }
+  
+    .submit-button {
+      font-size: 12px;
+    }
+  
+    .form-container {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 295px) {
+    .text-overlay {
+      left: 5%;
+    }
+  
+    .text-overlay h2 {
+      font-size: 18px;
+    }
+
+    .text-overlayy {
+      left: 5%;
+    }
+  
+    .text-overlayy h2 {
+      font-size: 18px;
+    }
+  
+    .form-container {
+      padding: 0.8rem;
+    }
+  
+    .submit-button {
+      width: 100%;
+      font-size: 10px;
+      padding: 6px;
+    }
+  }
+  
+  
+  /* For mobile devices (up to 320px) */
+  
+
+
+
+/* @media (min-width: 426px) and (max-width: 700px) {
+  .sign-up-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .text-overlay h2{
+    font-size: 10px;
+  }
+
+    
+    .image-container {
+      text-align: center;
+      width: 100%;
+      height: 60vh;
+    }
+      .text-overlay {
+        width: 80%;
+        text-align: center;
+      }
+    
+
+    
+    .form-container {
+      text-align: center;
+      width: 80%;
+      height: 70vh;
+      
+      p {
+        margin-left: 20px;
+      }
+      
+      .form {
+        width: 60%;
+        margin-left: 20px;
+        text-align: left;
+      }
+    }
+  } */
+  
+
+
+/* @media (max-width: 375px) {
   .text-overlay {
     width: 100%;
     text-align: center;
 }
-}
+} */
   /* For tablets (up to 425px) */
 
-  @media (max-width: 425px) {
+  /* @media (max-width: 425px) {
 
     .form-group{
       width: 100%;
@@ -480,12 +751,12 @@ height: 50vh;
       width: 90%;
       margin-top: 70px;
       
-    }
+    } */
   
 /* .pic1 {
 display: none;
 }  */
-  .text-overlay{
+  /* .text-overlay{
     top: 30%;
   }
   #hero{
@@ -551,14 +822,14 @@ footer{
     }
   
 }  }
-.background-image {
+.background-image { */
   /* width: 100%; */
   /* height: 100%; */
   /* object-fit: cover; */
-  height: 30vh;
+  /* height: 30vh;
 
-}
-.image-container {
+} */
+/* .image-container {
   background-color: #F7941D;
 
 }
@@ -581,8 +852,8 @@ padding: 0;
       }
     
     }
-}
-@media (min-width: 500px) and (max-width: 700px) {
+} */
+/* @media (min-width: 500px) and (max-width: 700px) {
 
     
   .sign-up-container{
@@ -625,11 +896,11 @@ p{
      }
     }
   }
-  .background-image {
+  .background-image { */
     /* width: 100%; */
     /* height: 100%; */
     /* object-fit: cover; */
-    height: 30vh;
+    /* height: 30vh;
   
   }
   .image-container {
@@ -680,12 +951,12 @@ p{
     width: 90%;
     margin-top: 70px;
     
-  }
+  } */
 
 /* .pic1 {
 display: none;
 }  */
-.text-overlay{
+/* .text-overlay{
   top: 30%;
 }
 #hero{
@@ -748,15 +1019,15 @@ margin-top: 30px;
   width: 100%;
   text-align: center;
 }
-}
-@media (max-width: 375px) {
+} */
+/* @media (max-width: 375px) {
   .text-overlay {
     width: 100%;
     text-align: center;
 }
-}
+} */
   /* For tablets (up to 425px) */
-  @media (max-width: 320px) {
+  /* @media (max-width: 320px) {
     .pic1{
       display: none;
     }
@@ -776,17 +1047,17 @@ margin-top: 30px;
  .description{
   width: 100%;
   text-align: center;
- }
-    .thank-you-container p {
-      font-size: 16px; /* Reduced font size for mobile */
+ } */
+    /* .thank-you-container p {
+      font-size: 16px; 
     }
   
     .text-overlay h2 {
-      font-size: 25px; /* Reduced font size for mobile */
+      font-size: 25px; 
     }
   
     .submit-button {
-      padding: 8px; /* Smaller button padding */
+      padding: 8px;
     }
     .image-container {
       display: flex;
@@ -794,22 +1065,22 @@ margin-top: 30px;
     }
   
     .text-overlay h2 {
-      font-size: 40px; /* Reduced font size for tablets */
+      font-size: 40px;
     }
   
     .thank-you-container p {
-      font-size: 18px; /* Slightly reduced font size for tablets */
+      font-size: 18px; 
     }
   
     .submit-button {
-      padding: 10px; /* Adjust button padding for tablets */
+      padding: 10px; 
     }
   
-  }
+  } */
 
 
 /* Styles for tablet */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   
 #hero {
   background-color: #fff;
@@ -906,12 +1177,12 @@ margin-top: 30px;
 }
 
 
-}
+} */
 
 /* Styles for 1440px (desktop) */
 
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   
   #hero {
     background-color: #fff;
@@ -1010,6 +1281,8 @@ margin-top: 30px;
 .submit-button {
   width: 30%;
 }
+
+
   }
   @tailwind base;
 @tailwind components;
@@ -1142,64 +1415,64 @@ button:hover {
   font-weight: bold;
   font-size: xx-large;
   color: black;
-}
+} */
 
 /* Responsive Media Queries */
-@media (max-width: 768px) { /* Targeting devices like iPhones */
+/* @media (max-width: 768px) {
   #hero {
-    height: auto; /* Allow height to adjust */
-    padding: 40px 10px; /* Adjust padding */
+    height: auto;
+    padding: 40px 10px;
   }
 
   .nav-container {
-    max-width: 100%; /* Full width */
+    max-width: 100%;
   }
 
   .description {
-    width: 100%; /* Full width */
-    font-size: 14px; /* Smaller font size */
+    width: 100%;
+    font-size: 14px;
   }
 
   .horizontal-line {
-    width: 30%; /* Adjust line width */
+    width: 30%;
   }
 
   .pic1 {
-    max-height: 200px; /* Adjust maximum height */
-    width: 80%; /* Adjust width */
-    top: 20%; /* Adjust positioning */
+    max-height: 200px;
+    width: 80%;
+    top: 20%;
   }
 
   .button-container {
-    flex-direction: column; /* Change to column */
-    align-items: center; /* Center items */
-    gap: 10px; /* Reduce gap */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .thank-you-container h1 {
-    font-size: 20px; /* Smaller font size */
+    font-size: 20px;
   }
 
   .thank-you-container p {
-    font-size: 16px; /* Smaller font size */
+    font-size: 16px;
   }
 
   .form-container {
-    flex-direction: column; /* Change to column */
-    width: 100%; /* Full width */
-    align-items: center; /* Center items */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
-}
+} */
 
-@media (max-width: 425px) { /* For smaller phones */
+/* @media (max-width: 425px) {
   #hero {
-    padding: 20px 5px; /* Further adjust padding */
+    padding: 20px 5px;
   }
   #hero {
     .nav-container {
         margin-top: 100px;
         height: 65vh;
-        /* margin-top: 10px; */
+        margin-top: 10px;
     }
 }
   .sign-up-container {
@@ -1211,46 +1484,46 @@ button:hover {
 }
 
   .thank-you-container h1 {
-    font-size: 18px; /* Smaller font size */
+    font-size: 18px;
   }
 
   .thank-you-container p {
-    font-size: 14px; /* Smaller font size */
+    font-size: 14px;
   }
 
   .pic1 {
-    max-height: 150px; /* Further reduce height */
-    width: 90%; /* Adjust width */
+    max-height: 150px;
+    width: 90%;
   }
 
   .form-container {
-    width: 90%; /* Adjust width */
+    width: 90%;
   }
 }
 
-@media (max-width: 375px) { /* For very small phones */
+@media (max-width: 375px) {
   .navbar1 {
-    padding: 10px; /* Adjust navbar padding */
+    padding: 10px;
   }
 
   .description {
-    font-size: 12px; /* Further reduce font size */
+    font-size: 12px; 
   }
 
   .thank-you-container h1 {
-    font-size: 16px; /* Further reduce font size */
+    font-size: 16px;
   }
 
   .thank-you-container p {
-    font-size: 12px; /* Further reduce font size */
+    font-size: 12px;
   }
 
   .pic1 {
-    max-height: 120px; /* Further reduce height */
-    width: 100%; /* Full width */
+    max-height: 120px;
+    width: 100%;
   }
 
   .form-container {
-    width: 95%; /* Adjust width */
+    width: 95%; 
   }
-}
+} */

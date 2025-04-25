@@ -4,11 +4,11 @@ import './css/Questionnaire.css';
 
 const questions = [
   {
-    question: "What is your biggest challenge in finding consistent work opportunities?",
+    question: "How much commission are you willing to pay to use a platform that guarantees consistent work opportunities?",
     options: [
-      { text: "Lack of visibility and exposure to potential clients", icon: "🧑‍🎨" },
-      { text: "Inconsistent pay and compensation for projects.", icon: "📅" },
-      { text: "Limited networking opportunities", icon: "💰" }
+      { text: "Up to 20% commission for guaranteed work", icon: "🧑‍🎨" },
+      { text: "Between 10% to 20% commission", icon: "📅" },
+      { text: "Limited networking opportunitiesLess than 10% commission", icon: "💰" }
     ]
   },
   // ... rest of questions unchanged
@@ -71,9 +71,9 @@ const Qn6 = () => {
                 </button>
             </div>
 
-            <footer>
-                <p>Copyright 2025 All Rights Reserved</p>
-            </footer>
+            <footer className="copyright-footerr">
+        <p>Copyright 2025 All Rights Reserved</p>
+      </footer> 
         </div>
     );
 };

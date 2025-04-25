@@ -38,6 +38,7 @@
   margin-bottom: 60px;
   width: 100%;
   max-width: 1200px;
+  align-items: center;
 }
 
 .option {
@@ -49,6 +50,7 @@
   cursor: pointer;
   transition: transform 0.2s;
   border: 1px solid #F7941D;
+  width: 300px;
 }
 
 .option:hover {
@@ -62,7 +64,7 @@
 
 .option-text {
   font-size: 1.1rem;
-  text-align: center;
+  /* text-align: center; */
   line-height: 1.4;
 }
 
@@ -100,11 +102,13 @@
   opacity: 0.9;
 }
 
-footer {
-  margin-top: auto;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #666;
+.copyright-footerr {
+  padding: 1rem;
+  text-align: center;
+  background: #000000;
+  margin-top: 0px;
+  font-size: medium;
+  margin-left: -32px;
 }
 
 @media (max-width: 768px) {
@@ -119,7 +123,8 @@ footer {
   }
   
   .option {
-    width: 100%;
+    width: 80%;
+    margin-left: 0;
   }
   
   .option-icon {

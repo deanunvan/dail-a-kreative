@@ -36,7 +36,7 @@ const SignUpSection = () => {
       <div className="sign-up-container">
         <div className="image-container">
           <img src={pic1} alt="Background" className="background-image" />
-          <div className="text-overlay">
+          <div className="text-overlayy">
             <h2>HELLO <br />JOIN <br />OUR <br /> WAITING <br /> LIST...</h2>
             <p>Seek a Customer!</p>
           </div>
@@ -76,7 +76,7 @@ const SignUpSection = () => {
                 value={phone}
                 onChange={(phone) => setPhone(phone)}
                 inputStyle={{
-                  width: '96%',
+                  width: '86%',
                   padding: '10px',
                   borderRadius: '5px',
                   border: 'none',
@@ -96,6 +96,7 @@ const SignUpSection = () => {
             </button>
           </form>
         </div>
+
       </div>
       <footer className="copyright-footerr">
         <p>Copyright 2025 All Rights Reserved</p>

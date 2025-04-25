@@ -4,11 +4,10 @@ import './css/Questionnaire.css';
 
 const questions = [
   {
-    question: "What is your biggest challenge in finding consistent work opportunities?",
-    options: [
-      { text: "Lack of visibility and exposure to potential clients", icon: "🧑‍🎨" },
-      { text: "Inconsistent pay and compensation for projects.", icon: "📅" },
-      { text: "Limited networking opportunities", icon: "💰" }
+    question: "How important is it for you to have access to a platform that connects you with local clients for in-person projects?",options: [
+      { text: "Very important – I prefer in-person work", icon: "🧑‍🎨" },
+      { text: "Somewhat important – it depends on the project", icon: "📅" },
+      { text: "Not very important – I prefer remote work", icon: "💰" }
     ]
   },
   // ... rest of questions unchanged
