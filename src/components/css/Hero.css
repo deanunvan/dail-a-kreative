@@ -4,21 +4,34 @@
         (max-width: 300px),
         (max-width: 295px) {
     .content-column h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .content-column p{
+      font-size: small;
     }
 
     .hero-section {
         padding: 0rem 0%;
-        margin-left: -0px;
+        margin-left: -39px;
+        margin-top: 80px;
+        height: 140vh;
       }
 
       .carousel-column {
-        height: 600px;
-
+        height: 100px;
+        margin-left: -10px;
       }
 
       .submit-button {
-        width: 30%;
+        width: 25%;
       }
 
+      .container{
+        flex-wrap: wrap;
+      }
+
+      .single-carousel{
+        height: 10px;
+      }
 }

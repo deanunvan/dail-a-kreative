@@ -146,11 +146,9 @@
   
   .logoS {
     width: 15%;
-    height: 40px;
     margin-left: 0;
     @media (max-width: 414px) {
       width: 30%;
-
     }
   }
   
@@ -180,9 +178,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.7rem;
+    padding: 0.1rem;
     z-index: 2; /* Ensure it's above the image */
-    margin-left: 0.3rem;
+    margin-left: 0rem;
   }
   
   .logo {
@@ -445,6 +443,7 @@
     .submit-button {
       width: 100%;
       margin: 60px 5px;
+      margin-left: 30px;
     }
   
     .option {
@@ -453,7 +452,13 @@
 
     .form-group{
       margin: 60px 5px;
-      margin-right: 100px;
+      margin-left: 30px;
+      margin-right: 80px;
+    }
+
+    .logoS{
+      height: 90px;
+      width: 40%;
     }
   }
 
@@ -508,6 +513,7 @@
     .submit-button {
       width: 100%;
       margin: 60px 5px;
+      margin-left: 30px;
     }
   
     .option {
@@ -516,7 +522,8 @@
 
     .form-group{
       margin: 60px 5px;
-      margin-right: 100px;
+      margin-left: 30px;
+      margin-right: 80px;
     }
   }
   
@@ -550,6 +557,8 @@
 
     .text-overlayy h2 {
       font-size: 22px;
+      margin-left: -30px;
+      margin-top: 30px;
     }
   
     .form-container {
@@ -558,6 +567,27 @@
   
     .form-group {
       margin-bottom: 0.8rem;
+      margin-left: 30px;
+    }
+
+    .image-container{
+      height: 35vh;
+    }
+
+    .submit-button {
+      width: 100%;
+      margin: 60px 5px;
+      margin-left: 30px;
+    }
+  
+    .option {
+      width: 100%;
+    }
+
+    .form-group{
+      margin: 60px 5px;
+      margin-left: 30px;
+      margin-right: 80px;
     }
   }
   

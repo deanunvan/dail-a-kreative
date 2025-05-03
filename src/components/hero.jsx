@@ -20,7 +20,7 @@ const ConnectSection = () => {
 
   return (
     <div>
-          <div className="container">
+      <div className="container">
       <div className="hero-section">
         {/* Content Column */}
         <div className="content-column">

@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   padding-left: 2rem;
   overflow: hidden;
+  margin-left: -30px;
 }
 
 .logo {
@@ -69,17 +70,19 @@ body {
   gap: 1rem;
   padding: 2rem 5%;
   align-items: center;
+  margin-top: 50px;
 }
 
 .content-column {
   flex: 1;
   max-width: 600px;
+  margin-left: 30px;
 }
 
 .carousel-column {
   flex: 1;
   max-width: 500px;
-  height: 600px;
+  height: 500px;
   overflow: hidden;
   position: relative;
 }
@@ -156,6 +159,10 @@ body {
   color: white;
 }
 
+Link{
+  text-decoration: none;
+}
+
 .copyright-footer {
   text-align: center;
   padding: 2rem;
@@ -230,3 +237,40 @@ Link {
 }
 
 
+@media (max-width: 430px),
+        (max-width: 412px),
+        (max-width: 375px),
+        (max-width: 300px),
+        (max-width: 295px) {
+    /* .content-column h1{
+        font-size: 1.3rem;
+    }
+
+    .content-column p{
+      font-size: small;
+    }
+
+    .hero-section {
+        padding: 0rem 0%;
+        margin-left: -20px;
+        margin-top: 80px;
+        height: 140vh;
+      }
+
+      .carousel-column {
+        height: 100px;
+        margin-left: -10px;
+      }
+
+      .submit-button {
+        width: 25%;
+      }
+
+      .container{
+        flex-wrap: wrap;
+      } */
+
+      .single-carousel{
+        width: 140px;
+      }
+}

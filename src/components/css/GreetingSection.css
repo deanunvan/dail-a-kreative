@@ -1,6 +1,6 @@
 .greeting-container {
   position: relative;
-  height: 80vh; /* Use 100vh for full screen height */
+  height: 100vh; /* Use 100vh for full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +21,10 @@
 .text-section {
   flex: 1; /* Allow text section to take available space */
   padding-right: 20px; /* Space between text and image */
+}
+
+br{
+  display: none;
 }
 
 .text-section h2 {
