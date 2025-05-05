@@ -145,7 +145,10 @@ footer p {
 /* Tablets (up to 768px) */
 @media (max-width: 768px) {
   .greeting-container { height: auto; }
-  .text-section h2 { font-size: 2.2rem; }
+  .text-section h2 { 
+    font-size: 2.2rem;
+    margin-top: 40px;
+   }
   .get-started-button { padding: 12px 24px; }
 }
 

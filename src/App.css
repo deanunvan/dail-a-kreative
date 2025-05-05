@@ -274,3 +274,10 @@ Link {
         width: 140px;
       }
 }
+
+@media (max-width: 600px),
+(max-width: 540px){
+  .single-carousel{
+    width: 140px;
+  }
+}

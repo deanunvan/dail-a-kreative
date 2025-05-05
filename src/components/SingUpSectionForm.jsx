@@ -75,7 +75,7 @@ const SignUpSection = () => {
                 value={phone}
                 onChange={(phone) => setPhone(phone)}
                 inputStyle={{
-                  width: '96%',
+                  width: '86%',
                   padding: '10px',
                   borderRadius: '5px',
                   border: 'none',
